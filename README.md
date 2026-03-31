@@ -28,27 +28,32 @@ oss-audit-24BCE10301/
 ## Scripts Overview
 
 ### Script 1 — System Identity Report
-File: script1_system_identity.sh
+File: `script1_system_identity.sh`
+
 Description: Displays a system welcome screen showing the Linux distribution name, kernel version, current logged-in user, home directory, system uptime, current date/time, and the open-source license covering the OS.
 Concepts Used: Variables, echo, command substitution ($()), output formatting.
 
 ### Script 2 — FOSS Package Inspector
-File: script2_package_inspector.sh
+File: `script2_package_inspector.sh`
+
 Description: CThis script checks whether Git is installed, retrieves its version and licence metadata, and uses a case statement to print a philosophy note depending on the package name. It shows conditional logic and pattern matching
 Concepts Used: if-then-else, case statement, dpkg -l with grep and awk, pipe chaining, exit codes.
 
 ### Script 3 — Disk and Permission Auditor
-File: script3_disk_permission_auditor.sh
+File: `script3_disk_permission_auditor.sh`
+
 Description:This script visit through important system directories, reports their disk usage and permissions, and also checks for Git's own configuration directory. It shows for-loop iteration over arrays and field extraction.
 Concepts used: arrays, for loop, if-then-else, ls -ld, du -sh, awk, cut, directory existence tests.
 
 ### Script 4 — Log File Analyzer
-File: script4_log_analyzer.sh
+File: `script4_log_analyzer.sh`
+
 Description:This script reads a log file line by line, counts keyword occurrences, and prints the last five matching lines. It accepts command-line arguments for the log file path and keyword, making it reusable across different scenarios.
 Concepts used: command-line arguments ($1, $2), default values (${var:-default}), while-read loop, if-then-else, counter arithmetic, grep -i with pipe, tail.
 
 ### Script 5 — Open Source Manifesto Generator
-File: script5_manifesto_generator.sh
+File: `script5_manifesto_generator.sh`
+
 Description:This creative script asks the user three interactive questions and generates a personalised open-source philosophy statement, saved to a .txt file. It demonstrates interactive input, string concatenation, and file output redirection.
 Concepts used: read -p for interactive input, string concatenation via variable expansion, file redirection (> and >>), date command, cat to display output, alias concept shown in comments.
 
@@ -70,30 +75,30 @@ chmod +x *.sh
 
 
 ##### Script 1 — System Identity Report
-
+```bash
 ./script1_system_identity.sh
-
+```
 ##### Script 2 — FOSS Package Inspector
-
+```bash
 ./script2_package_inspector.sh
-
+```
 ##### Script 3 — Disk and Permission Auditor
-
+```bash
 ./script3_disk_permission_auditor.sh
-
+```
 ##### Script 4 — Log File Analyzer
-
+```bash
 #Basic usage (default keyword: 'error')
 ./script4_log_analyzer.sh /var/log/syslog
 
 #With a custom keyword
 ./script4_log_analyzer.sh /var/log/syslog WARNING
-
+```
 ##### Script 5 — Open Source Manifesto Generator
-
+```bash
 ./script5_manifesto_generator.sh
 #Follow the on-screen prompts to generate your manifesto
-
+```
 
 ## Dependencies
 
