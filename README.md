@@ -65,12 +65,14 @@ Concepts used: read -p for interactive input, string concatenation via variable 
 * The chosen software package installed (for Script 2)
 
 ### Step 1 — Clone the Repository
+```bash
 git clone https://github.com/PrathameshDhakad/oss-audit-24BCE10301.git
 cd oss-audit-24BCE10301
-
+```
 ### Step 2 — Make All Scripts Executable
+```bash
 chmod +x *.sh
-
+```
 ### Step 3 — Run Each Script
 
 
@@ -104,11 +106,11 @@ chmod +x *.sh
 
 | **Script**	| **Dependencies**	| **Install Command** |
 | :--- | :--- | :--- | 
-| Script 1 |	uname, uptime, whoami	| Pre-installed on all Linux systems |
-| Script 2 |	rpm or dpkg, grep	| Pre-installed on all Linux systems |
-| Script 3 |	du, ls, awk, cut	| Pre-installed on all Linux systems |
-| Script 4 |	grep, tail	| Pre-installed on all Linux systems |
-| Script 5 |	date, cat	| Pre-installed on all Linux systems |
+| Script 1 |	`uname`, `uptime`, `whoami`	| Pre-installed on all Linux systems |
+| Script 2 |	`rpm` or `dpkg`, `grep`	| Pre-installed on all Linux systems |
+| Script 3 |	`du`, `ls`, `awk`, `cut`	| Pre-installed on all Linux systems |
+| Script 4 |	`grep`, `tail`	| Pre-installed on all Linux systems |
+| Script 5 |	`date`, `cat`	| Pre-installed on all Linux systems |
 
 ## License
 This project was submitted as part of the Open Source Software (OSS NGMC) course at VIT. All shell scripts and written content are original work by the student listed above.
