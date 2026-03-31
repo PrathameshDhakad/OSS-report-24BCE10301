@@ -68,16 +68,21 @@ chmod +x *.sh
 
 ### Step 3 — Run Each Script
 
+
 ##### Script 1 — System Identity Report
+
 ./script1_system_identity.sh
 
 ##### Script 2 — FOSS Package Inspector
+
 ./script2_package_inspector.sh
 
 ##### Script 3 — Disk and Permission Auditor
+
 ./script3_disk_permission_auditor.sh
 
 ##### Script 4 — Log File Analyzer
+
 #Basic usage (default keyword: 'error')
 ./script4_log_analyzer.sh /var/log/syslog
 
@@ -85,6 +90,7 @@ chmod +x *.sh
 ./script4_log_analyzer.sh /var/log/syslog WARNING
 
 ##### Script 5 — Open Source Manifesto Generator
+
 ./script5_manifesto_generator.sh
 #Follow the on-screen prompts to generate your manifesto
 
