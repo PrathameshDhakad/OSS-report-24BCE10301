@@ -15,13 +15,15 @@
 [Python] — This repository contains a structured audit of the Linux Kernel and five functional shell scripts as part of the OSS NGMC course.
 
 ## Repository Structure
-oss-audit-24BSA10342/
+```text
+oss-audit-24BCE10301/
 ├── README.md
 ├── script1_system_identity.sh
 ├── script2_package_inspector.sh
 ├── script3_disk_permission_auditor.sh
 ├── script4_log_analyzer.sh
 └── script5_manifesto_generator.sh
+```
 
 ## Scripts Overview
 #Script 1 — System Identity Report
